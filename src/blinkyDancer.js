@@ -21,7 +21,6 @@
 var BlinkyDancer = function (top, left, timeBetweenSteps) {
   // call dancer class
   // pass in correct refrence 
-
   Dancer.call(this, top, left, timeBetweenSteps);
 };
 
