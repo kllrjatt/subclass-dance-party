@@ -1,62 +1,81 @@
-body, html{
-  height:100%;
+body,
+html {
+    height: 100%;
 }
 
-body{
-  margin: 0px;
-  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/c6/df/a2/c6dfa22150790c670c988c5196f6ba0e.gif");
-  background-size: cover;
-  font-size: 18px;
+body {
+    margin: 0px;
+    background-image: url("https://s-media-cache-ak0.pinimg.com/originals/c6/df/a2/c6dfa22150790c670c988c5196f6ba0e.gif");
+    background-size: cover;
+    font-size: 18px;
 }
 
-body, a:link, a:visited, a:active{
-  color: lightblue;
+body,
+a:link,
+a:visited,
+a:active {
+    color: lightblue;
 }
 
-.title, .addDancerButton{
-  padding:5px 12px;
-  float:right;
+.title,
+.addDancerButton {
+    padding: 5px 12px;
+    float: right;
 }
 
-.topbar{
-  height:32px;
-  background-color: #555;
+.topbar {
+    height: 32px;
+    background-color: #555;
 }
 
-.title{
-  background-color: #777;
+.title {
+    background-color: #777;
 }
 
-.teddy{
-  content: url('http://gifdanceparty.giphy.com/assets/dancers/smooch.gif');
-  position:absolute;
-  height: 250px;
-  width: auto;
+.teddy {
+    content: url('http://gifdanceparty.giphy.com/assets/dancers/smooch.gif');
+    position: absolute;
+    height: 250px;
+    width: auto;
 }
 
-.carlton{
-  content: url('https://68.media.tumblr.com/2dfc3369827df9b981e111d7fd8fc732/tumblr_mvemcyarmn1rslphyo1_400.gif');
-  position:absolute;
-  height: 250px;
-  width: auto;
+.carlton {
+    content: url('https://68.media.tumblr.com/2dfc3369827df9b981e111d7fd8fc732/tumblr_mvemcyarmn1rslphyo1_400.gif');
+    position: absolute;
+    height: 250px;
+    width: auto;
 }
 
-.dean{
-  content: url('https://68.media.tumblr.com/4c2a7f80f9d2ef93f56d26fbcbd7d1cc/tumblr_inline_njtngoCAug1smccyu.gif');
-  position:absolute;
-  height: 250px;
-  width: auto;
+.dean {
+    content: url('https://68.media.tumblr.com/4c2a7f80f9d2ef93f56d26fbcbd7d1cc/tumblr_inline_njtngoCAug1smccyu.gif');
+    position: absolute;
+    height: 250px;
+    width: auto;
 }
 
-.bender{
-  content: url('https://uproxx.files.wordpress.com/2013/03/bender13.gif?w=650');
-  position:absolute;
-  height: 250px;
-  width: auto;
+.bender {
+    content: url('https://uproxx.files.wordpress.com/2013/03/bender13.gif?w=650');
+    position: absolute;
+    height: 250px;
+    width: auto;
 }
 
-#leftLineUp, #rightLineUp, #topLineUp, #bottomLineUp, #horizontalLineUp, #verticalLineUp{
-  font-weight: bold;
-  padding:5px 12px;
-  float:right;
+#leftLineUp,
+#rightLineUp,
+#topLineUp,
+#bottomLineUp,
+#horizontalLineUp,
+#verticalLineUp {
+    font-weight: bold;
+    padding: 5px 12px;
+    float: right;
+}
+
+.flip {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
 }
