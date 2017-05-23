@@ -85,19 +85,19 @@ var rightAlign = function () {
   var top = 50;
   window.dancers.forEach(function (dancer) {
     // for all dancers add static left 
-    dancer.setPosition(top, '95%');
+    dancer.setPosition(top, '75%');
     //incriment top 
     top += 20;
   });
 
 };
 
- // add top align 
+// add top align 
 var topAlign = function () {
-    //pass static left
+  //pass static left
   var left = 50;
   window.dancers.forEach(function (dancer) {
-     // for all dancers add static top
+    // for all dancers add static top
     dancer.setPosition(50, left);
     //incriment left
     left += 20;
@@ -110,7 +110,7 @@ var bottomAlign = function () {
   var left = 50;
   window.dancers.forEach(function (dancer) {
     // add static bottom position
-    dancer.setPosition('95%', left);
+    dancer.setPosition('75%', left);
     //incriment left 
     left += 20;
   });
@@ -161,4 +161,32 @@ Bender.prototype.step = function () {
   Dancer.prototype.step.call(this);
   // toggle node per previours structure 
   this.$node.toggle();
+};
+
+var horizontalAlign = function () {
+  var left1 = 50;
+  var left2 = 50;
+  for (var i = 0; i < window.dancers.length; i++) {
+    if (i % 2 === 0) {
+      window.dancers[i].setPosition(20, left1);
+      left1 += 20;
+    } else {
+      window.dancers[i].setPosition('75%', left2);
+      left2 += 20;
+    }
+  }
+};
+
+var verticalAlign = function () {
+  var top1 = 20;
+  var top2 = 20;
+  for (var i = 0; i < window.dancers.length; i++) {
+    if (i % 2 === 0) {
+      window.dancers[i].setPosition(top1, 20);
+      top1 += 20;
+    } else {
+      window.dancers[i].setPosition(top2, '75%');
+      top2 += 20;
+    }
+  }
 };

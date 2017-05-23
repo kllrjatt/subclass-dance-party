@@ -49,6 +49,14 @@ $(document).ready(function () {
     bottomAlign();
   });
 
+  $('#verticalLineUp').on('click', function (event) {
+    horizontalAlign();
+  });
+
+  $('#horizontalLineUp').on('click', function (event) {
+    verticalAlign();
+  });
+
 });
 
 
