@@ -66,35 +66,52 @@ Carlton.prototype.step = function () {
 };
 
 
+// add left alignment
 var leftAlign = function () {
+  // pass is static top for first element
   var top = 50;
+  // itreate over all dancers 
   window.dancers.forEach(function (dancer) {
+    // pass static left location 
     dancer.setPosition(top, 15);
+    // add static position for incriment
     top += 20;
   });
 };
 
+// add right align 
 var rightAlign = function () {
+  //pass static top 
   var top = 50;
   window.dancers.forEach(function (dancer) {
+    // for all dancers add static left 
     dancer.setPosition(top, '95%');
+    //incriment top 
     top += 20;
   });
 
 };
 
+ // add top align 
 var topAlign = function () {
+    //pass static left
   var left = 50;
   window.dancers.forEach(function (dancer) {
+     // for all dancers add static top
     dancer.setPosition(50, left);
+    //incriment left
     left += 20;
   });
 };
 
+// add bottom align 
 var bottomAlign = function () {
+  // add static left 
   var left = 50;
   window.dancers.forEach(function (dancer) {
-    dancer.setPosition(750, left);
+    // add static bottom position
+    dancer.setPosition('95%', left);
+    //incriment left 
     left += 20;
   });
 
