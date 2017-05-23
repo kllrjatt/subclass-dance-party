@@ -9,7 +9,7 @@
 //   blinkyDancer.step = function() {
 //     // call the old version of step at the beginning of any call to this new version of step
 //     oldStep();
-//     // toggle() is a jQuery method to show/hide the <span> tag.
+//     // toggle() is a jQuery method to show/hide the <div> tag.
 //     // See http://api.jquery.com/category/effects/ for this and
 //     // other effects you can use on a jQuery-wrapped html tag.
 //     blinkyDancer.$node.toggle();
@@ -18,8 +18,8 @@
 //   return blinkyDancer;
 // };
 
-var BlinkyDancer = function (top, left, timeBetweenSteps) {
-  this.$node = $('<span class="dancer"></span>');
+var Teddy = function (top, left, timeBetweenSteps) {
+  this.$node = $('<div class="teddy"></div>');
   // call dancer class
   // pass in correct refrence 
   Dancer.call(this, top, left, timeBetweenSteps);
@@ -29,11 +29,11 @@ var BlinkyDancer = function (top, left, timeBetweenSteps) {
 // add dancer prototype to chain 
 // refer consturctor back to blink dancer 
 
-BlinkyDancer.prototype = Object.create(Dancer.prototype);
-BlinkyDancer.prototype.constructor = BlinkyDancer;
+Teddy.prototype = Object.create(Dancer.prototype);
+Teddy.prototype.constructor = Teddy;
 
 // write step function 
-BlinkyDancer.prototype.step = function () {
+Teddy.prototype.step = function () {
   // call the older dancer function from dancer prototype 
   // use this to refer to blink dancer 
   Dancer.prototype.step.call(this);
@@ -43,7 +43,7 @@ BlinkyDancer.prototype.step = function () {
 
 
 var Carlton = function (top, left, timeBetweenSteps) {
-  this.$node = $('<span class="carlton"></span>');
+  this.$node = $('<div class="carlton"></div>');
   // call dancer class
   // pass in correct refrence 
   Dancer.call(this, top, left, timeBetweenSteps);
@@ -100,8 +100,8 @@ var bottomAlign = function () {
 
 };
 
-var Spiderman = function (top, left, timeBetweenSteps) {
-  this.$node = $('<span class="spiderman"></span>');
+var Dean = function (top, left, timeBetweenSteps) {
+  this.$node = $('<div class="dean"></div>');
   // call dancer class
   // pass in correct refrence 
   Dancer.call(this, top, left, timeBetweenSteps);
@@ -111,11 +111,11 @@ var Spiderman = function (top, left, timeBetweenSteps) {
 // add dancer prototype to chain 
 // refer consturctor back to blink dancer 
 
-Spiderman.prototype = Object.create(Dancer.prototype);
-Spiderman.prototype.constructor = Spiderman;
+Dean.prototype = Object.create(Dancer.prototype);
+Dean.prototype.constructor = Dean;
 
 // write step function 
-Spiderman.prototype.step = function () {
+Dean.prototype.step = function () {
   // call the older dancer function from dancer prototype 
   // use this to refer to blink dancer 
   Dancer.prototype.step.call(this);
@@ -123,8 +123,8 @@ Spiderman.prototype.step = function () {
   this.$node.toggle();
 };
 
-var DancingDog = function (top, left, timeBetweenSteps) {
-  this.$node = $('<span class="dancingDog"></span>');
+var Bender = function (top, left, timeBetweenSteps) {
+  this.$node = $('<div class="bender"></div>');
   // call dancer class
   // pass in correct refrence 
   Dancer.call(this, top, left, timeBetweenSteps);
@@ -134,11 +134,11 @@ var DancingDog = function (top, left, timeBetweenSteps) {
 // add dancer prototype to chain 
 // refer consturctor back to blink dancer 
 
-DancingDog.prototype = Object.create(Dancer.prototype);
-DancingDog.prototype.constructor = DancingDog;
+Bender.prototype = Object.create(Dancer.prototype);
+Bender.prototype.constructor = Bender;
 
 // write step function 
-DancingDog.prototype.step = function () {
+Bender.prototype.step = function () {
   // call the older dancer function from dancer prototype 
   // use this to refer to blink dancer 
   Dancer.prototype.step.call(this);

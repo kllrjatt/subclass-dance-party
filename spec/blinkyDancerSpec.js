@@ -6,7 +6,7 @@ describe('blinkyDancer', function () {
   beforeEach(function () {
     clock = sinon.useFakeTimers();
     // fix test line to use NEW keywork to create a instance of BlinkyDancer
-    blinkyDancer = new BlinkyDancer(10, 20, timeBetweenSteps);
+    blinkyDancer = new Teddy(10, 20, timeBetweenSteps);
   });
 
   it('should have a jQuery $node object', function () {

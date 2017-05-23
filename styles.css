@@ -10,7 +10,7 @@ body{
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton, .addCarlton, .addSpiderMan, .addDancingDog, .randomDancer{
+.title, .addDancerButton{
   padding:5px 12px;
   float:right;
 }
@@ -21,28 +21,33 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
-.dancer{
-  border:10px solid red;
-  border-radius:10px;
+
+.teddy{
+  content: url('http://gifdanceparty.giphy.com/assets/dancers/smooch.gif');
   position:absolute;
+  height: 250px;
+  width: auto;
 }
 
 .carlton{
-  border:10px solid blue;
-  border-radius:10px;
+  content: url('https://68.media.tumblr.com/2dfc3369827df9b981e111d7fd8fc732/tumblr_mvemcyarmn1rslphyo1_400.gif');
   position:absolute;
+  height: 250px;
+  width: auto;
 }
 
-.spiderman{
-  border:10px solid white;
-  border-radius:10px;
+.dean{
+  content: url('https://68.media.tumblr.com/4c2a7f80f9d2ef93f56d26fbcbd7d1cc/tumblr_inline_njtngoCAug1smccyu.gif');
   position:absolute;
+  height: 250px;
+  width: auto;
 }
 
-.dancingDog{
-  border:10px solid pink;
-  border-radius:10px;
+.bender{
+  content: url('https://uproxx.files.wordpress.com/2013/03/bender13.gif?w=650');
   position:absolute;
+  height: 250px;
+  width: auto;
 }
 
 #leftLineUp, #rightLineUp, #topLineUp, #bottomLineUp{
