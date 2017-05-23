@@ -45,7 +45,7 @@ var Dancer = function (top, left, timeBetweenSteps) {
 Dancer.prototype.step = function () {
   // add step function 
   // use bind in setTimeOut for correct binding , 
-    // use timebetween steps for passing in setTImeout Function 
+  // use timebetween steps for passing in setTImeout Function 
   setTimeout(this.step.bind(this), this.timeBetweenSteps);
 };
 
@@ -56,5 +56,5 @@ Dancer.prototype.setPosition = function (top, left) {
     left: left
   };
   // apply style settings to node 
-  this.$node.css(styleSettings);
+  this.$node.animate(styleSettings, 'slow');
 };

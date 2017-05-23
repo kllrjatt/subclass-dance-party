@@ -164,29 +164,29 @@ Bender.prototype.step = function () {
 };
 
 var horizontalAlign = function () {
-  var left1 = 50;
-  var left2 = 50;
+  var left1 = 250;
+  var left2 = 250;
   for (var i = 0; i < window.dancers.length; i++) {
     if (i % 2 === 0) {
-      window.dancers[i].setPosition(20, left1);
-      left1 += 20;
+      window.dancers[i].setPosition(150, left1);
+      left1 += 50;
     } else {
-      window.dancers[i].setPosition('75%', left2);
-      left2 += 20;
+      window.dancers[i].setPosition('65%', left2);
+      left2 += 50;
     }
   }
 };
 
 var verticalAlign = function () {
-  var top1 = 20;
-  var top2 = 20;
+  var top1 = 150;
+  var top2 = 150;
   for (var i = 0; i < window.dancers.length; i++) {
     if (i % 2 === 0) {
-      window.dancers[i].setPosition(top1, 20);
-      top1 += 20;
+      window.dancers[i].setPosition(top1, 150);
+      top1 += 50;
     } else {
-      window.dancers[i].setPosition(top2, '75%');
-      top2 += 20;
+      window.dancers[i].setPosition(top2, '65%');
+      top2 += 50;
     }
   }
 };
