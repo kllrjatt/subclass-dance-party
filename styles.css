@@ -26,4 +26,9 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
+.blueDancer{
+  border:10px solid blue;
+  border-radius:10px;
+  position:absolute;
+}
 
