@@ -160,7 +160,7 @@ Bender.prototype.step = function () {
   // use this to refer to blink dancer 
   Dancer.prototype.step.call(this);
   // toggle node per previours structure 
-  this.$node.toggle();
+  this.$node.toggle(Math.floor(Math.random() * 100));
 };
 
 // horizontal align and vertical align functions
