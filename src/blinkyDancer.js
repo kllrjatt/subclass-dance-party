@@ -75,7 +75,7 @@ var leftAlign = function () {
     // pass static left location 
     dancer.setPosition(top, 15);
     // add static position for incriment
-    top += 20;
+    top += 50;
   });
 };
 
@@ -87,7 +87,7 @@ var rightAlign = function () {
     // for all dancers add static left 
     dancer.setPosition(top, '75%');
     //incriment top 
-    top += 20;
+    top += 50;
   });
 
 };
@@ -100,7 +100,7 @@ var topAlign = function () {
     // for all dancers add static top
     dancer.setPosition(50, left);
     //incriment left
-    left += 20;
+    left += 50;
   });
 };
 
@@ -112,7 +112,7 @@ var bottomAlign = function () {
     // add static bottom position
     dancer.setPosition('75%', left);
     //incriment left 
-    left += 20;
+    left += 50;
   });
 
 };
@@ -201,4 +201,13 @@ var verticalAlign = function () {
       top2 += 50;
     }
   }
+};
+
+var randomLocation = function () {
+  window.dancers.forEach(function (dancer) {
+    // add static bottom position
+    dancer.setPosition($(
+      'body').height() * Math.random(),
+      $('body').width() * Math.random());
+  });
 };

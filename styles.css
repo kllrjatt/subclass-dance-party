@@ -1,5 +1,4 @@
-body,
-html {
+body, html {
     height: 100%;
 }
 
@@ -10,15 +9,11 @@ body {
     font-size: 18px;
 }
 
-body,
-a:link,
-a:visited,
-a:active {
+body, a:link, a:visited, a:active {
     color: lightblue;
 }
 
-.title,
-.addDancerButton {
+.title, .addDancerButton {
     padding: 5px 12px;
     float: right;
 }
@@ -60,12 +55,7 @@ a:active {
     width: auto;
 }
 
-#leftLineUp,
-#rightLineUp,
-#topLineUp,
-#bottomLineUp,
-#horizontalLineUp,
-#verticalLineUp {
+#leftLineUp, #rightLineUp, #topLineUp, #bottomLineUp, #horizontalLineUp, #verticalLineUp, #splitUp {
     font-weight: bold;
     padding: 5px 12px;
     float: right;

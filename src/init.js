@@ -57,6 +57,10 @@ $(document).ready(function () {
     verticalAlign();
   });
 
+  $('#splitUp').on('click', function (event) {
+    randomLocation();
+  });
+
 });
 
 
