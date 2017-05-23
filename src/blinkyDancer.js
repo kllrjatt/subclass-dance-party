@@ -64,3 +64,21 @@ BlueDancer.prototype.step = function () {
   // toggle node per previours structure 
   this.$node.toggle();
 };
+
+
+var leftAlign = function () {
+  var top = 50;
+  window.dancers.forEach(function (dancer) {
+    dancer.setPosition(top, 15);
+    top += 20;
+  });
+};
+
+var rightAlign = function () {
+  var top = 50;
+  window.dancers.forEach(function (dancer) {
+    dancer.setPosition(top, 1000);
+    top += 20;
+  });
+
+};

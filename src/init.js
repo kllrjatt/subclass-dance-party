@@ -27,7 +27,20 @@ $(document).ready(function () {
       $('body').width() * Math.random(),
       Math.random() * 1000
     );
+    //add all dancers to the window dancers 
+    // need to add dancers so that we can line them up in the future 
+    window.dancers.push(dancer);
     $('body').append(dancer.$node);
   });
+
+  $('#leftLineUp').on('click', function (event) {
+    leftAlign();
+  });
+
+  $('#rightLineUp').on('click', function (event) {
+    rightAlign();
+  });
+
 });
+
 
