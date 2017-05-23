@@ -3,7 +3,8 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-image: url("http://www.officialpsds.com/images/stocks/Club-dance-floor-stock2681.jpg");
+  background-size: cover;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -26,13 +27,26 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
-.blueDancer{
+.carlton{
   border:10px solid blue;
   border-radius:10px;
   position:absolute;
 }
 
-#leftLineUp, #rightLineUp{
+.spiderman{
+  border:10px solid white;
+  border-radius:10px;
+  position:absolute;
+}
+
+.dancingDog{
+  border:10px solid pink;
+  border-radius:10px;
+  position:absolute;
+}
+
+#leftLineUp, #rightLineUp, #topLineUp, #bottomLineUp{
+  font-weight: bold;
   padding:5px 12px;
   float:right;
 }
