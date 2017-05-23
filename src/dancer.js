@@ -56,5 +56,5 @@ Dancer.prototype.setPosition = function (top, left) {
     left: left
   };
   // apply style settings to node 
-  this.$node.animate(styleSettings, 'slow');
+  this.$node.animate(styleSettings, Math.floor(Math.random() * 500));
 };
