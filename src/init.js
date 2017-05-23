@@ -41,6 +41,14 @@ $(document).ready(function () {
     rightAlign();
   });
 
+  $('#topLineUp').on('click', function (event) {
+    topAlign();
+  });
+
+  $('#bottomLineUp').on('click', function (event) {
+    bottomAlign();
+  });
+
 });
 
 
